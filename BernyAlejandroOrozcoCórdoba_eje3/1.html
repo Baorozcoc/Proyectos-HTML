@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vistazo a Wakanda</title>
+	<meta charset="utf-8">
+	<meta lang="esp">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="phaser.js"></script>
+	<script src="pantera.js"></script>
+		<script src="musica.js"></script>
+	<audio loop id="musica">
+        <source src="img/musica.mp3">     
+    </audio>
+</head>
+<body id="p1" onmouseover="CorreMusica()">
+	<div id="navegador">
+		<h1>VISTAZO A WAKANDA    </h1>
+			<button><a href="index.html" class="navlink">Descripcion y Ubicacion</a></button>
+			<button><a href="1.html" class="navlink">Habitantes</a></button>
+			<button><a href="2.html" class="navlink">Actividades</a></button>
+			<button><a href="3.html" class="navlink">Historia</a></button>
+			<button><a href="mapa.html" class="navlink">Mapa interactivo</a></button>
+			<button><a href="4.html" class="navlink">Bibliografia</a></button>
+	</div>
+		<div id="contenido"><!--Div del contenido-->
+			<article><!--contenido ordenado con un título y un div que a su vez contiene varios divs de imagen-descripción, lo 
+						reorganicé de esta forma para poder aplicar un orden más apropiado en estilos con flex-->
+				<h3 id="T3">HABITANTES</h3>
+				<div class="tablas">
+					<div><img src="img/1_1.jpg" class="casilla">
+						<h4>PANTERA NEGRA</h4></div>
+					<div><img src="img/1_2.jfif" class="casilla">
+						<h4>DORA MILAJE</h4></div>
+					<div><img src="img/1_3.jpg" class="casilla">
+						<h4>TRIBU JABARI</h4></div>
+					<div><img src="img/1_4.jfif" class="casilla">
+						<h4>TRIBU MINERA</h4></div>
+					<div><img src="img/1_5.png" class="casilla">
+						<h4>TRIBU FRONTERIZA</h4></div>
+					<div><img src="img/1_6.png" class="casilla">
+						<h4>TRIBU MERCANTE</h4></div>
+					<div><img src="img/1_7.jpg" class="casilla">
+						<h4>TRIBU DEL RIO</h4></div>
+				</div>
+				
+			</article>
+			<div id="sprite" class= "Phaser"></div>
+		</div>
+		<audio controls class="audios">
+    		<source type="audio/mp3" src="img/panteranegra.mp3">
+		</audio>
+		<img id="BotonMusica" onclick="PausaMusica()" src="img/icono2.png">
+</body>
+</html>

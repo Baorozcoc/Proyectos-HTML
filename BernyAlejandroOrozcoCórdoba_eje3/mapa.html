@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vistazo a Wakanda</title>
+	<meta charset="utf-8">
+	<meta lang="esp">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="mapaint.js"></script>
+	<script src="phaser.js"></script>
+	<script src="pantera.js"></script>
+		<script src="musica.js"></script>
+	<audio loop id="musica">
+        <source src="img/musica.mp3">  
+    </audio>
+</head>
+<body id="mapa" onmouseover="CorreMusica()">
+	<div id="navegador">
+		<h1>VISTAZO A WAKANDA    </h1>
+			<button><a href="index.html" class="navlink">Descripcion y Ubicacion</a></button>
+			<button><a href="1.html" class="navlink">Habitantes</a></button>
+			<button><a href="2.html" class="navlink">Actividades</a></button>
+			<button><a href="3.html" class="navlink">Historia</a></button>
+			<button><a href="mapa.html" class="navlink">Mapa interactivo</a></button>
+			<button><a href="4.html" class="navlink">Bibliografia</a></button>
+	</div>
+	<div id="contenido"><!--Div del contenido-->
+		<article><!--Articulo organizado por el mapa y una serie de botones y sus correspondientes Popups -->
+			<div id="mapaInt"> <!--Div del mapa para intentar mantenerlo fijo-->
+				<img class="mapapeq" src="img/mapa.jpg"> <!--Mapa para recorrer-->
+				<!--Luego estan ordenados en pares imagen-boton, los ordené de esta forma para poder
+					implementarlos de forma que los iconos no queden encima de una imagen emergente-->
+				<img id="central2" src="img/P8.jpg">
+				<img class="ico" id="central" onmouseover="AbrirP(8)" onmouseout="CerrarP(8)" src="img/icono.png">	
+
+				<img id="mountain2" src="img/P7.jpg">
+				<img class="ico" id="mountain" onmouseover="AbrirP(7)" onmouseout="CerrarP(7)" src="img/icono.png">
+
+				<img id="wgorillas2" src="img/P4.jpg">
+				<img class="ico" id="wgorillas" onmouseover="AbrirP(4)" onmouseout="CerrarP(4)" src="img/icono.png">
+
+				<img id="mound2" src="img/P3.jpg">
+				<img class="ico" id="mound" onmouseover="AbrirP(3)" onmouseout="CerrarP(3)" src="img/icono.png">	
+
+				<img id="village2" src="img/P6.jpg">
+				<img class="ico" id="village" onmouseover="AbrirP(6)" onmouseout="CerrarP(6)" src="img/icono.png">
+
+				<img id="island2" src="img/P5.png">
+				<img class="ico" id="island" onmouseover="AbrirP(5)" onmouseout="CerrarP(5)" src="img/icono.png">				
+
+				<img id="palace2" src="img/P1.jpg">
+				<img class="ico" id="palace" onmouseover="AbrirP(1)" onmouseout="CerrarP(1)" src="img/icono.png">
+
+				<img id="temple2" src="img/P2.jpg">
+				<img class="ico" id="temple" onmouseover="AbrirP(2)" onmouseout="CerrarP(2)" src="img/icono.png">
+
+
+			</div>			
+		</article>
+		<div id="sprite" class= "Phaser"></div>
+	</div>
+	<audio controls class="audios">
+    	<source type="audio/mp3" src="img/panteranegra.mp3">
+	</audio>
+	<img id="BotonMusica" onclick="PausaMusica()" src="img/icono2.png">
+</body>
+</html>

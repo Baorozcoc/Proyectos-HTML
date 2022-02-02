@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vistazo a Wakanda</title>
+	<meta charset="utf-8">
+	<meta lang="esp">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="phaser.js"></script>
+	<script src="pantera.js"></script>
+		<script src="musica.js"></script>
+	<audio loop id="musica">
+        <source src="img/musica.mp3">     
+    </audio>
+</head>
+<body id="p4" onmouseover="CorreMusica()">
+	<div id="navegador">
+		<h1>VISTAZO A WAKANDA    </h1>
+			<button><a href="index.html" class="navlink">Descripcion y Ubicacion</a></button>
+			<button><a href="1.html" class="navlink">Habitantes</a></button>
+			<button><a href="2.html" class="navlink">Actividades</a></button>
+			<button><a href="3.html" class="navlink">Historia</a></button>
+			<button><a href="mapa.html" class="navlink">Mapa interactivo</a></button>
+			<button><a href="4.html" class="navlink">Bibliografia</a></button>
+	</div>
+	<div id="contenido"><!--Div del contenido-->
+		<article><!--Artículo organizado dos titulos,el mapa de navegación y una serie de referencias bibliograficas, a las cuales se puede acceder directamente ya que están escritos como enlaces-->
+			<h3>MAPA DE NAVEGACIÓN</h3>
+			<img src="img/nav.jpg" class="story">
+			<h3>BIBLIOGRAFÍA</h3>
+			<ul>
+				<li> <a href="https://muhrpg.forumcommunity.net/?t=61688260" target="_blank">Muh rpg forumcommunity - Historia de Wakanda - 8/5/2020</a></li>
+				<li> <a href="https://lacovacha.mx/videos/wakanda-hogar-black-panther-rumbo-a-black-panther/" target="_blank">La Covacha - Conoce Wakanda - 13/2/2018</a></li>
+				<li><a href="https://www.youtube.com/watch?v=V4ciYzTwoAk&ab_channel=TuDesordenTV" target="_blank">Youtube- Presentación en PPT sobre Wakanda</a>
+				</li>
+				<li><a href="https://www.youtube.com/watch?v=sg7DJLIIHtM&ab_channel=%E9%97%AA%E7%87%9A" target="_blank">Youtube - Musica de fondo- Cool beats Killmonger</a></li>
+			</ul>
+		</article>
+		<div id="sprite" class= "Phaser"></div>
+	</div>
+	<audio controls class="audios">
+    	<source type="audio/mp3" src="img/panteranegra.mp3">
+	</audio>
+	<img id="BotonMusica" onclick="PausaMusica()" src="img/icono2.png">
+</body>
+</html>
